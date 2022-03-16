@@ -109,7 +109,7 @@ class MenuWidget extends StatelessWidget {
             child: FlutterLogo(),
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         ListTile(
           leading: const Icon(Icons.home),
           title: const Text('Home'),
