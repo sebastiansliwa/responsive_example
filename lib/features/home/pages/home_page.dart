@@ -13,9 +13,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      drawer: const Drawer(
-        child: NavigationPanel(),
-      ),
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
