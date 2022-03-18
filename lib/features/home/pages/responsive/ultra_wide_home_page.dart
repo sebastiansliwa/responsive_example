@@ -17,14 +17,30 @@ class UltraWideHomePage extends StatelessWidget {
         child: NavigationPanel(),
       ),
       body: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
-          SizedBox(
-            width: 200,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const SizedBox(
+            width: 300,
             child: NavigationPanel(),
           ),
-          MainContent(),
-          ExtraPanel(),
+          Expanded(
+            child: Center(
+              child: SizedBox(
+                width: 900,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: const [
+                    Expanded(
+                      child: MainContent(),
+                    ),
+                    Expanded(
+                      child: ExtraPanel(),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

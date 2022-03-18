@@ -16,13 +16,8 @@ class NarrowHomePage extends StatelessWidget {
       drawer: const Drawer(
         child: NavigationPanel(),
       ),
-      body: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: ListView(
         children: const [
-          SizedBox(
-            width: 200,
-            child: NavigationPanel(),
-          ),
           MainContent(),
           ExtraPanel(),
         ],

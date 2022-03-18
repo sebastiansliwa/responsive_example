@@ -23,8 +23,12 @@ class WideHomePage extends StatelessWidget {
             width: 200,
             child: NavigationPanel(),
           ),
-          MainContent(),
-          ExtraPanel(),
+          Expanded(
+            child: MainContent(),
+          ),
+          Expanded(
+            child: ExtraPanel(),
+          ),
         ],
       ),
     );

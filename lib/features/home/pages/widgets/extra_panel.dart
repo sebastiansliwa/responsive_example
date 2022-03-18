@@ -8,12 +8,11 @@ class ExtraPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 200,
       height: 400,
-      margin: const EdgeInsets.symmetric(vertical: 10),
+      margin: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.tertiary,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(40),
       ),
     );
   }
